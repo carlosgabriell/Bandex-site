@@ -1,0 +1,133 @@
+body {
+  background: rgb(227, 227, 227);
+  background: linear-gradient(
+    135deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(255, 255, 255, 1) 63%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  /*height: 100vh;
+  background: linear-gradient(to right, white, #e3e3e3);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;*/
+}
+
+/*@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgb(227, 227, 227);
+  background: linear-gradient(
+    135deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(255, 255, 255, 1) 63%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar img {
+  height: 200px;
+}
+
+.menu {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-title {
+  font-size: 36px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.menu-item {
+  width: 300px;
+  height: 400px;
+  background: rgb(227, 227, 227);
+  background: linear-gradient(
+    135deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(255, 255, 255, 1) 63%,
+    rgba(227, 227, 227, 1) 100%
+  );
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.menu-item:active {
+  transform: translateY(0px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+h3::selection {
+  background-color: black;
+  color: white;
+}
+
+p::selection {
+  background-color: black;
+  color: white;
+}
+
+.item-description {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #999;
+}
